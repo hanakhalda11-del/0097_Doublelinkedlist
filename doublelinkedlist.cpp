@@ -218,4 +218,17 @@ int main()
     DoubleLinkedList list;
     char choice;
 
-    
+    do
+    {
+        cout << "\nMenu:\n";
+        cout << "1. add record\n";
+        cout << "2. delete record\n";
+        cout << "3. view ascending\n";
+        cout << "4. view descending\n";
+        cout << "5. search record\n";
+        cout << "6. exit\n";
+        cout << "enter your choice: ";
+
+        cin >> choice;
+
+        
