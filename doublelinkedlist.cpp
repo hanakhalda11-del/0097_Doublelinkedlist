@@ -113,4 +113,19 @@ public:
             if (START != NULL)
                 START -> prev = NULL; //step 2b: START.prev = NULL
         }
-        
+        else
+        {
+            //step 3: link previous node to next of current
+            current -> prev -> next = current -> next;
+
+            //step 4: if current is not the last node
+            if (current -> next != NULL)
+                current -> next -> prev = current -> prev;
+        }
+
+        //step 5: delete the node
+        delete current;
+        cout << "record with roll number" << rollNo << "deleted" << endl;
+    }
+
+    
