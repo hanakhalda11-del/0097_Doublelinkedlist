@@ -205,4 +205,11 @@ public:
         {
             cout << "record not found\n";
         }
-        
+        else
+        {
+            cout << "record found\n";
+            cout << "roll number: " << current -> noMhs << endl;
+        }
+    }
+};
+
